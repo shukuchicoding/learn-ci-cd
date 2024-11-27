@@ -30,7 +30,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: vietanhhust1404/ci-cd:staging
+          tags: vietanhhust1404/ci-cd:staging_1.1.1
 
 
   pull-and-up:
