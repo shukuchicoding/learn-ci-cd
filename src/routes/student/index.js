@@ -29,7 +29,7 @@ router.get("/:studentId", async (req, res, next) => {
   try {
     const studentId = req.params.studentId;
     const col = (await connection).db().collection(STUDENT_PROFILE);
-    console.log(col);
+    // console.log(col);
     const doc = await col.findOne({ studentId });
     if (!doc) return res.status(400).json("student's profile does not exist!");
     else return res.json(doc);
